@@ -1,5 +1,14 @@
 # omni-layer-config
 
+## path tree
+
+```
+--/wallet
+    --/tether
+        --/data
+        --/omnicore-0.4.0
+```
+
 ## cmd
 
 ```bash
