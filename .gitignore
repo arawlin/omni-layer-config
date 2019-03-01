@@ -1,3 +1,4 @@
 logs/
 regtest/
 *.txt
+*.pid
