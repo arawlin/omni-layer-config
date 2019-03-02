@@ -12,6 +12,7 @@
 ## cmd
 
 ```bash
+---------------------------bitcoin
 ./cli.sh getinfo
 ./cli.sh getnetworkinfo
 
@@ -19,16 +20,37 @@
 ./cli.sh walletpassphrase 123456qwert 3600
 
 ./cli.sh listaccounts
-./cli.sh getnewaddress
+./cli.sh getnewaddress usdt_issuer
+./cli.sh getaddressesbyaccount usdt_issuer
 ./cli.sh getbalance
 
 ./cli.sh generate 101
 
-./cli.sh sendtoaddress mrgPcxDFdEv6rUjQHyHi5DWHveYDTNQMvh 10.00
+./cli.sh sendtoaddress muqC8dD4SRjqUaUJiupunzS3XP2pYu37VX 10.00
 ./cli.sh listunspent 0
+./cli.sh listunspent 0 99999999 '["muqC8dD4SRjqUaUJiupunzS3XP2pYu37VX"]'
 ./cli.sh generate 1
 ./cli.sh gettransaction 8140cad185d5e52c19936bf89f890f787b6619edc9973e61a9cd57141fe556c9
 ./cli.sh listtransactions "*" 10 0
 
+---------------------------omni
 ./cli.sh omni_getinfo
+./cli.sh omni_listproperties
+./cli.sh omni_getproperty 1
+./cli.sh omni_gettransaction 8140cad185d5e52c19936bf89f890f787b6619edc9973e61a9cd57141fe556c9
+
+./cli.sh omni_sendissuancefixed "my1WgwgkeU4QuDZhWsSPfq5VdEFVxA3TDZ" 2 2 0 "Financial and insurance activities" "" "TetherUS" "https://tether.to" "ExampleDescription" "2520000000.00"
+./cli.sh omni_getwalletbalances
+./cli.sh omni_getwalletaddressbalances
+
+./cli.sh omni_send "my1WgwgkeU4QuDZhWsSPfq5VdEFVxA3TDZ" "muqC8dD4SRjqUaUJiupunzS3XP2pYu37VX" 2147483651 "100.0"
+
+./cli.sh omni_listpendingtransactions
+./cli.sh omni_gettransaction 544f9430e49ae1c06455e15f3349051c1dec8e986da145b643f2bd7b0c013707
+./cli.sh omni_listtransactions
+./cli.sh omni_getbalance muqC8dD4SRjqUaUJiupunzS3XP2pYu37VX 2147483651
+
+./cli.sh omni_sendall "muqC8dD4SRjqUaUJiupunzS3XP2pYu37VX" "my1WgwgkeU4QuDZhWsSPfq5VdEFVxA3TDZ" 2
+./cli.sh omni_send "muqC8dD4SRjqUaUJiupunzS3XP2pYu37VX" "my1WgwgkeU4QuDZhWsSPfq5VdEFVxA3TDZ" 2147483651 "100.0"
+
 ```
