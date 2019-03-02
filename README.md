@@ -20,6 +20,7 @@
 ./cli.sh walletpassphrase 123456qwert 3600
 
 ./cli.sh listaccounts
+./cli.sh getaccount muqC8dD4SRjqUaUJiupunzS3XP2pYu37VX
 ./cli.sh getnewaddress usdt_issuer
 ./cli.sh getaddressesbyaccount usdt_issuer
 ./cli.sh getbalance
