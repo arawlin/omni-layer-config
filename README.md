@@ -4,6 +4,10 @@
 
 download from `https://www.omnilayer.org/download.html`
 
+```bash
+wget https://bintray.com/artifact/download/omni/OmniBinaries/omnicore-0.4.0-x86_64-linux-gnu.tar.gz
+```
+
 ## path tree
 
 ```
