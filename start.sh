@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR_NODE_BIN="../omnicore-0.7.1/bin"
+DIR_NODE_BIN="../omnicore-0.8.0/bin"
 DIR_DATA="."
 
 $DIR_DATA/stop.sh

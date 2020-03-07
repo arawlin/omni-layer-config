@@ -14,7 +14,7 @@ wget https://bintray.com/artifact/download/omni/OmniBinaries/omnicore-0.4.0-x86_
 --/wallet
     --/tether
         --/data
-        --/omnicore-0.7.1
+        --/omnicore-0.8.0
 ```
 
 ## cmd
